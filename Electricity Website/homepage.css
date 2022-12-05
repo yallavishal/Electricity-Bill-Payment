@@ -1,0 +1,177 @@
+ .scr {
+        margin: 20px;
+      }
+      marquee {
+        margin-left: 20%;
+        margin-right: 20%
+      }
+      .footer {
+        text-align: center;
+        background-color: #333;
+        color: #fff;
+        margin: 0;
+        font-size:medium;
+      }
+body {
+    margin: 0;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .header {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #navbar {
+    overflow: hidden;
+
+    margin: 0;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17.49px;
+	background-color:blue;
+  }
+ 
+
+
+#navbar a:link {
+  color: white;
+  text-decoration: none;
+}
+
+
+#navbar a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  color: red;
+}
+
+
+#navbar a:active {
+  color: yellow;
+}
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+.flexContainer {
+    display: flex;
+}
+
+.flexChild {
+    flex: 1;
+}  
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: mymove;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes mymove {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* .bg-img {
+    The image used
+    background-image: url("img3.jpg");
+  
+    min-height: 1000px;
+  
+    Center and scale the image nicely
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  } */
+  
+  /* Add styles to the form container */
+  .container {
+    position: absolute;
+    left: 0;
+    margin: 20px;
+    max-width: 500px;
+    padding: 16px;
+    /* background-color: white; */
+  }
+  
